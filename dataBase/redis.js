@@ -2,11 +2,9 @@ const redis = require("redis");
 require("dotenv").config();
 
 const redisClient = redis.createClient({
-  password: 'QWZiOXzUlRuoFLDxS5LMg3MammfX1cNY',
-    socket: {
-        host: 'redis-10902.c89.us-east-1-3.ec2.cloud.redislabs.com',
-        port: 10902
-    }
+  host: "localhost",
+  password: "",
+  port: 6379,
 });
 
 redisClient.connect(); //temperory changes
